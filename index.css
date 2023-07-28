@@ -199,11 +199,6 @@ main{
 }
 
 
-
-.cards__container:hover{
-    cursor: pointer;
-}
-
 .card__image{
     width: 200px;
     height: 200px;
@@ -223,6 +218,15 @@ main{
 .card__text--image{
     width: 60px;
     height: 60px;
+}
+
+.card__text a img{
+    width: 30px;
+    height: 30px;
+}
+
+.card__text a img:hover{
+    cursor: pointer;
 }
 
 .slider{
@@ -362,7 +366,8 @@ footer div a img{
 
 @media (max-width: 716px){
     .section__text--secondary,
-    .section__figure{
+    .section__figure,
+    .card__text--image{
         display: none;
     }
 

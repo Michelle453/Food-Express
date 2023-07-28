@@ -2,6 +2,7 @@
     --white: #FFFFFF;
     --pomegranate: #ed4031;
     --black: #000000;
+    --grey: #b5b5b5;
     --lg: 30px;
     --md: 20px;
     --sm: 15px
@@ -366,8 +367,7 @@ footer div a img{
 
 @media (max-width: 716px){
     .section__text--secondary,
-    .section__figure,
-    .card__text--image{
+    .section__figure{
         display: none;
     }
 

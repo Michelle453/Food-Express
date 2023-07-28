@@ -1,0 +1,418 @@
+:root{
+    --white: #FFFFFF;
+    --pomegranate: #ed4031;
+    --black: #000000;
+    --lg: 30px;
+    --md: 20px;
+    --sm: 15px
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--pomegranate);
+    position: sticky;
+    
+}
+
+.container__left{
+    display: flex;
+   
+}
+
+.navbar__img{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.navbar__icon_menu{
+    display: none;
+}
+
+.navbar__title{
+    text-decoration: none;
+    color: var(--black);
+    
+}
+
+.navbar__left ul{
+    padding-left: 0;
+    margin-left: 16px;
+}
+
+.navbar__left ul,
+.navbar__right ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar__left ul li,
+.navbar__right ul li{
+    margin: 4px;
+    padding: 8px;
+    
+}
+
+.navbar__left ul li:hover{
+    border: 1px solid var(--pomegranate);
+    border-radius: 16px;
+    
+}
+
+.navbar__left ul li a,
+.navbar__rigt ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.navbar__item{
+    display: flex;
+}
+/*.navbar__item -> mirar con display flex*, usar el pseudoelemento de after para la imagen*/
+.navbar__item__user{
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+.navbar__item__cart{
+    background-color: var(--pomegranate);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.navbar__item__user:hover{
+    cursor: pointer;  
+}
+
+.nav__mobile{
+    display: none;
+}
+
+.nav__mobile-links{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.nav__mobile-links a{
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    margin: 16px 0 4px 16px;
+}
+
+main{
+    margin: 50px 20px 0 20px;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.section__text--primary{
+    font-size: var(--lg);
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+    margin-top: 80px;
+}
+
+
+
+.section__text--secondary{
+    font-size: var(--md);
+}
+.section__figure{
+    width: 300px;
+    height: 300px;
+    margin-top: 68px;
+    
+}
+.section__figure--img{
+    width: 300px;
+    height: 300px;
+   
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 16px 0 16px;
+    flex-direction: column;
+
+}
+
+.cards__container{
+    border: 1px solid var(--pomegranate);
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+    margin: 0 8px 8px 0;
+    padding: 8px 8px 8px 8px;
+  
+    
+}
+
+.card{
+    display: flex;
+    
+}
+
+.card__mobile{
+    
+    display: none;
+}
+
+.cards__container{
+    width: 200px;
+    height: 300px;
+}
+
+
+
+.cards__container:hover{
+    cursor: pointer;
+}
+
+.card__image{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+}
+.cards__container .card__image p{
+    font-size: var(--md);
+    
+}
+.card__text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__text--image{
+    width: 60px;
+    height: 60px;
+}
+
+.slider{
+    margin: auto;
+    padding: 40px;
+    width: 800px;
+    height: 300px;
+}
+
+.menu__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    margin: 0 8px;
+    color: black;
+}
+
+.menu li,
+.information li{
+    list-style: none;
+}
+
+.information{
+    position: relative;
+    width: 760px;
+    height: 430px;
+    box-sizing: border-box;
+    
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--pomegranate);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background-color: white;
+}
+
+.information li:first-child{
+    opacity: 1;
+}
+
+.information li:target{
+    opacity: 1;
+}
+
+.content div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content div p:nth-child(1){
+    margin: 8px 0 0;
+    font-size: var(--md);
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.content div div p{
+   margin-left: 16px;
+}
+
+.content div p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content figure,
+.content figure img{
+    width: 300px;
+    height: 300px;
+}
+.content figure img{
+    border-radius: 16px;
+    
+}
+
+button{
+    border-radius: 24px;
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: var(--pomegranate);
+    color: var(--white);
+    justify-self: center;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 260px;    
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer span:hover{
+    cursor: pointer;
+}
+
+
+
+footer div a img{
+    width: 30px;
+    height: 30px;
+    margin: 0 16px;
+}
+
+@media (max-width: 716px){
+    .section__text--secondary,
+    .section__figure{
+        display: none;
+    }
+
+    main{
+        margin-top: 0px;
+    }
+
+    .section__text--primary{
+        margin-bottom: 0;
+    }
+
+    .cards__container{
+        width: 150px;
+        height: 200px;
+    }
+
+    .card__image{
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+
+@media (max-width: 640px){
+    .navbar__title,
+    .navbar__left,
+    .navbar__right ul li:nth-child(1){
+        display: none;
+    }
+
+    .navbar__icon_menu{
+        display: block;
+        margin: 24px 16px 0 16px;
+    }
+
+    
+
+    
+    
+    
+}
+
+@media (max-width: 375px){
+
+    .card{
+        display: none;
+    }
+
+    .card__mobile{
+        
+        display: flex;
+    }
+}

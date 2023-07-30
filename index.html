@@ -49,13 +49,16 @@
             <div class="navbar__right">
                 <ul>
                     <li>
-                        <img  class="navbar__item__user" src="./icons/icon_usuario.png" alt="Mi cuenta">
+                        <a href="./login.html">
+                            <img  class="navbar__item__user" src="./icons/icon_usuario.png" alt="Mi cuenta">
+                        </a>
+                        
                         
                     </li>
                     <li class="navbar__item">
                         <img class="navbar__item__user" src="./icons/icon_bag.png" alt="Carrito de compras">
                         <div class="navbar__item__cart">
-                            <span>0</span>
+                            <span>1</span>
                         </div>
                     </li>
                 </ul>
@@ -80,27 +83,81 @@
     
 
     <main>
-            <section class="section">
+
+        <section class="section">
             
-                <p class="section__text--primary">
-                    <span>
-                        ¡Bienvenido a Food Express! <br>
-                    </span>
-                    <span class="section__text--secondary">
-                        Somos una entusiasta empresa de comidas rápidas.<br>
-                        Nos especializamos en deleitar tu paladar con hamburguesas jugosas<br>
-                        Perros calientes irresistibles y crujientes salchipapas.
-                    </span>  
-                </p>
+            <p class="section__text--primary">
+                <span>
+                    ¡Bienvenido a Food Express! <br>
+                </span>
+                <span class="section__text--secondary">
+                    Somos una entusiasta empresa de comidas rápidas.<br>
+                    Nos especializamos en deleitar tu paladar con hamburguesas jugosas<br>
+                    Perros calientes irresistibles y crujientes salchipapas.
+                </span>  
+            </p>
                 
-                <figure class="section__figure">
-                    <img class="section__figure--img" src="./productImage/hamburger.jpg" alt="Combo de comida rápida">
-                </figure>
+            <figure class="section__figure">
+                <img class="section__figure--img" src="./productImage/hamburger.jpg" alt="Combo de comida rápida">
+            </figure>
 
-            </section>
+        </section>
 
-        
+        <section class="shopping__cart-container">
+            <div class="shopping__cart">
+
+                <div class="shopping__cart-title">
+                    
+                    <a href="./index.html">
+                        <img src="./icons/icon_arrow.png" alt="arrow">
+                    </a>
+                    
             
+                    <span>Mi orden</span>
+            
+                </div>
+            
+                <div class="shopping__cart-information">
+                    
+    
+                    <div>
+    
+                        <img src="./productImage/salchipapa.jpg" alt="product">
+            
+                        <span>Salchipapa</span>
+            
+                        <span>$ 16.000</span>
+                    
+                        <a href="">
+                            <img src="./icons/icon_x.png" alt="x">
+                        </a>
+    
+                    </div>
+                    
+                    
+                
+                
+        
+                </div>
+            
+                <div class="shopping__cart-total">
+            
+                    <span>Total</span>
+            
+                    <span>$ 16.000</span>
+            
+                </div>
+                
+                <div class="shopping__cart-button">
+
+                    <button>Comprar ahora</button>
+
+                </div>
+                
+        
+            </div>
+        </section>
+        
 
         
         <section class="cards" id="menu">

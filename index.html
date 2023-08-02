@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@300&family=Quicksand:wght@300;500;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./icons/icon_food_express.png">
     <title>Food Express</title>
@@ -19,7 +20,13 @@
             <div class="container__left">
                 <div class="container__left">
 
-                    <a class="navbar__icon_menu"><img src="./icons/icon_menu.svg" alt="icon menu"></a>
+                    <div class="container__left-button">
+                        <button id="buttonMenu">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </button>
+                    </div>
 
                     <a href="./index.html"><img class="navbar__img" src="./icons/icon_food_express.png" alt="Food Express Logo"></a>
                     
@@ -66,14 +73,14 @@
     
         </nav>
 
-        <nav class="nav__mobile">
+        <nav class="nav__mobile collapsed" id="links">
 
-            <div class="nav__mobile-links">
+            <div class="nav__mobile-links" id="linksMovil">
 
-                <a href="">Menu</a>
-                <a href="">Combos</a>
-                <a href="">Contactanos</a>
-                <a href="">Iniciar Sesión</a>
+                <a href="#menu">Menu</a>
+                <a href="#combos">Combos</a>
+                <a href="#contactanos">Contactanos</a>
+                <a href="./login.html">Iniciar Sesión</a>
 
             </div>
 
@@ -522,7 +529,18 @@
         </div>
     </footer>
     
-    
+    <script>
+
+        const buttonMenu = document.querySelector("#buttonMenu");
+
+        const linksMovil = document.querySelector("#links");
+
+        buttonMenu.addEventListener("click", e => {
+            console.log("funciona")
+            linksMovil.classList.toggle("collapsed")
+        });
+
+    </script>
     
 
 </body>

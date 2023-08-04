@@ -21,7 +21,7 @@
                 <div class="container__left">
 
                     <div class="container__left-button">
-                        <button id="buttonMenu">
+                        <button class="button__menu" id="buttonMenu">
                             <span class="material-symbols-outlined">
                                 menu
                             </span>
@@ -157,7 +157,7 @@
                 
                 <div class="shopping__cart-button">
 
-                    <button>Comprar ahora</button>
+                    <button class="primary__button">Comprar ahora</button>
 
                 </div>
                 
@@ -414,7 +414,7 @@
                             <img src="./productImage/combo1.jpg" alt="Combo Express">
                         </figure>
 
-                        <button>
+                        <button class="primary__button">
                             Ordenar Ahora
                         </button> 
                     </li>
@@ -432,7 +432,7 @@
                             
                             <div>
                                 <img class="icon" class="icon" src="./icons/icon_soda.png" alt="icon soda">
-                                <p>2 Gaseosa de 250ml</p>
+                                <p>2 Gaseosas de 250ml</p>
                             </div>
                             
                             <div>
@@ -442,7 +442,7 @@
                             
                             <p>
                                 <span>Precio Total:</span>
-                                <span>$ 50.000</span>
+                                <span>$ 40.000</span>
                             </p>
                             
                         </div>
@@ -451,7 +451,7 @@
                             <img src="./productImage/combo2.jpg" alt="Combo Junior">
                         </figure>
 
-                        <button>
+                        <button class="primary__button">
                             Ordenar Ahora
                         </button>
                     </li>
@@ -489,12 +489,147 @@
                             <img src="./productImage/combo3.jpg" alt="Combo Vaquero">
                         </figure>
             
-                        <button>
+                        <button class="primary__button">
                             Ordenar Ahora
                         </button>  
                     </li>
                 </ul>
 
+            </div>
+        </section>
+
+        <section class="slider__movil" id="combos_movil">
+
+            <div class="slider__container__movil">
+                <div class="menu__container__movil">
+                    <p>COMBOS</p>
+    
+                    <ul class="menu__movil">
+    
+                        <li>
+                            <a href="#content1-movil">
+                                1
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#content2-movil">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#content3-movil">
+                                3
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+            
+            
+                <ul class="information__movil">
+        
+                    <li id="content1-movil" class="content__movil">
+        
+                        <div>
+        
+                            <p>Combo Express</p>
+                            
+                            <img src="./productImage/combo1.jpg" alt="Combo Express">
+        
+                            <div>
+                                <p>1 Hamburguesa Sencilla</p>
+                            </div>
+        
+                            <div>
+                                <p>1 Gaseosa de 250ml</p>
+                            </div>
+        
+                            <div>
+                                <p>1 Porción de Papas a la Francesa</p>
+                            </div>
+        
+                            <p>
+                                <span>Precio Total:</span>
+                                <span>$ 25.000</span>
+                            </p>
+        
+                        </div>
+        
+                        <button class="primary__button">
+                            Ordenar Ahora
+                        </button>
+        
+                    </li>
+        
+                    <li id="content2-movil" class="content__movil">
+        
+                        <div>
+        
+                            <p>Combo Junior</p>
+                            
+                            <img src="./productImage/combo2.jpg" alt="Combo Junior">
+        
+                            <div>
+                                <p>2 Hamburguesas Sencillas</p>
+                            </div>
+        
+                            <div>
+                                <p>2 Gaseosas de 250ml</p>
+                            </div>
+        
+                            <div>
+                                <p>2 Porciones de Papas a la Francesa</p>
+                            </div>
+        
+                            <p>
+                                <span>Precio Total:</span>
+                                <span>$ 40.000</span>
+                            </p>
+        
+                        </div>
+        
+                        <button class="primary__button">
+                            Ordenar Ahora
+                        </button>
+        
+                    </li>
+        
+                    <li id="content3-movil" class="content__movil">
+        
+                        <div>
+        
+                            <p>Combo Vaquero</p>
+                            
+                            <img src="./productImage/combo3.jpg" alt="Combo Vaquero">
+        
+                            <div>
+                                <p>2 Perros Sencillos</p>
+                            </div>
+        
+                            <div>
+                                <p>1 Gaseosas de 250ml</p>
+                            </div>
+        
+                            <div>
+                                <p>2 Porciones de Papas a la Francesa</p>
+                            </div>
+        
+                            <p>
+                                <span>Precio Total:</span>
+                                <span>$ 24.000</span>
+                            </p>
+        
+                        </div>
+        
+                        <button class="primary__button">
+                            Ordenar Ahora
+                        </button>
+        
+                    </li>
+        
+                </ul>
             </div>
         </section>
         
@@ -509,6 +644,8 @@
 
     <footer id="contactanos">
         <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1409146700%3A1688527484024470&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Diniciar%2Bsesi%25C3%25B3n%2Bgmail%26rlz%3D1C1ALOY_esCO972CO972%26oq%3Dinicia%26gs_lcrp%3DEgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIHCAMQABiPAjIGCAQQRRg9MgYIBRBFGD0yBggGEEUYPdIBCDE1NzVqMGoxqAIAsAIA%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=es&ifkv=AeDOFXgmaU-G3MQ9EPeF1CU7jlgqsCy9XCReHx36lJSIuX-91jrgKZOqCfWrqPUr_4_8BdFJA6kG&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin">FoodExpress@gmail.com</a>
+
+
 
         <span>
             Terminos de Servicios
@@ -536,7 +673,6 @@
         const linksMovil = document.querySelector("#links");
 
         buttonMenu.addEventListener("click", e => {
-            console.log("funciona")
             linksMovil.classList.toggle("collapsed")
         });
 

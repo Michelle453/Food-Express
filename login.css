@@ -68,6 +68,10 @@ body{
     text-decoration: underline;
 }
 
+.login__container .links br{
+    display: none;
+}
+
 .login__container button{
     border-radius: 24px;
     width: 180px;
@@ -84,4 +88,28 @@ body{
 
 .login__container button:hover{
     cursor: pointer;
+}
+
+@media (max-width: 375px){
+
+    .login__container{
+        width: auto;
+        height: auto;
+    }
+
+    .login__container input{
+        font-size: var(--sm);
+    }
+
+    .login__container span{
+        margin: 0 8px 4px 8px;
+    }
+
+    .login__container .links{
+        text-align: center;
+    }
+
+    .login__container .links br{
+        display: block;
+    }
 }

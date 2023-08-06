@@ -17,6 +17,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
+    background-color: var(--white);
 }
 
 .collapsed{
@@ -131,11 +132,20 @@ body{
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
-  }
+}
+
+.nav__mobile{
+    width: 200px;
+    height: auto;
+    
+}
 
 .nav__mobile-links{
     display: flex;
     flex-direction: column;
+    border-radius: 0 16px 16px;
+    border: 1px solid var(--pomegranate);
+    
     
     
 }
@@ -144,7 +154,14 @@ body{
     display: block;
     text-decoration: none;
     color: var(--black);
-    margin: 16px 0 4px 16px;
+    margin: 16px 0 4px 0;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--pomegranate);
+}
+
+.nav__mobile-links a:nth-child(4){
+    border-bottom: none;
 }
 
 main{

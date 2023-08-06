@@ -458,9 +458,7 @@ footer{
     justify-content: space-between;
 }
 
-.footer__icon-email{
-    display: none;
-}
+
 
 footer a{
     text-decoration: none;
@@ -529,7 +527,7 @@ footer div a img{
     
 }
 
-@media (max-width: 375px){
+@media (max-width: 390px){
 
     .nav__mobile,
     .slider__movil{
@@ -622,9 +620,30 @@ footer div a img{
     }
 
     
-    .footer{
+    footer{
         margin-top: 550px;
     }
+
+    footer a:first-child{
+        display: none;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+
+    footer div a:first-child{
+        display: flex;
+    }
+
+    footer a img{
+        width: 30px;
+        height: 30px;
+        margin: 0 0 0 40px;
+    }
+    
 
     
 
